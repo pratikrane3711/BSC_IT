@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+  <head>
+    <title> HTML forms </title>
+  </head>          
+  <body>
+
+    <h1> Forms in HTML</h1>
+
+    <forms action = "/submitt.php">
+      <div>
+        <lable for="name"> Name </lable>
+        <input id = "name" type="text" placeholder ="Enter your Name" required>
+      </div>
+
+      <div>
+        <lable for="phone"> phone </lable>
+        <input id ="phone" type="text" placeholder="phone" required>          
+      </div>
+                                                                 
+      <div>
+        <lable for="email"> Email</lable>
+        <input id ="email" type="eamail" placeholder="Enter Email" required>         
+      </div>
+
+      <div>
+        <lable for="password"> Password</lable>
+        <input id ="password" type="password" placeholder="Enter Password" required>
+      </div>
+
+      <div>
+        <lable for="dob"> Date of Birth </lable>
+        <input id="dob" type="date" placeholder="Enter Date" required>
+      </div>
+
+      <!-- Dropdown (Select input) for gender -->
+      <div>
+        <lable for="gender"> Gender </lable>
+        <select id="gender" required>
+          <option value="disabled selected"> Select Gender </option>
+          <option value="male"> Male </option>
+          <option value="female"> Female </option>
+          <option value="other"> Other </option>
+
+          
+        </select>
+              
+      
+      </div>
+
+    </forms>
+
+  </body>                                             
+</html>             
