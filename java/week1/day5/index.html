@@ -4,7 +4,7 @@
   </head>
   <body>
     <script>
-      for( i = 0; i < 5; i++ )                       
+       for( i = 0; i < 5; i++ )                       
       console.log(i + 1 )
 
       //Program to add first n natural numbers
@@ -16,8 +16,58 @@
           //console.log(( i + 1 ), "+")
 
         }
-      console.log( "Sum of first " + n + " Natural number is " + sum )   
+      console.log( "Sum of first " + n + " Natural number is " + sum )  
+
+      
+
+      let obj = {
+         Harry: 90,
+         Shubh: 45,
+         Shivika: 56,
+         Ritika: 57,
+         Shiv: 23
+      }
+      for( let a in obj){
+          console.log(a)
+      } 
+
+      //For in loop
+      for( let a in obj ){
+        console.log("Marks of " + a + " are " + obj[a])
+      }
+
+
+      //For of loop      
+      for( let b of "Harry" ){
+        console.log(b)
+      }
+
+
 
     </script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
   </body>
 </html>
