@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+    <head>
+        <title> Radio </title>
+    </head>
+    <body>
+
+    <div>
+        <!-- Radio butoon -->
+        <p> Subscription Plane </p>
+
+        <input id="basic" type="radio" name="subscription"
+        value="basic">
+        <label for="basic"> Basic </label>
+
+        <input id="premium" type="radio" name="subscription"
+        value="premium">
+        <label for="premium"> Premium </label>
+
+        <input id="vip" type="radio" name="subscription"
+        value="vip">
+        <label for="vip"> VIP </label>
+    </div> 
+  
+    <!-- checkbox -->
+    <div>
+        <input id="terms" type="checkbox" required>
+        <label for="terms"> I agree to the terms and condition </label>
+    </div>
+
+    <!-- Texarea -->    
+    <div>
+        <label for="comments"> Comments </lable>
+        <textarea id="comments" placeholder="Enter your comments"
+        rows="4"></textarea>
+    </div>
+
+    <!-- Submit Button -->
+    <div>
+        <button type="submit"> Submit </button>
+    </div>
+     
+
+    <!-- Chat gpt learning --> 
+    <form action="/subscribe" method="post">
+        <fieldset>
+            <legend>Subscription Plan</legend>
+
+        <label>
+             <input id="basic" type="radio" name="subscription"
+             value="basic" checked>
+             Basic 
+        </label>
+
+        <label>
+             <input type="radio" name="subscription" value="basic" checked>
+             Basic
+        </label>
+
+        <label>
+             <input type="radio" name="subscription" value="premium">
+             Premium
+        </label>
+
+        <label>
+             <input type="radio" name="subscription" value="vip">
+             VIP
+        </label>
+          </fieldset>
+
+     <button type="submit">Submit</button>
+   </form>       
+    
+  </body>
+</html>
