@@ -3,6 +3,7 @@
         <title></title>
     </head>
     <body>
+      <form action ="/submit.php">
         <div>
             <h1> List of market </h1>
             <ol> 
@@ -57,11 +58,81 @@
                         <td> gill </td>  
                         <td> 44 </td>  
                         <td> 50000 </td>       
-                    </tr>
+                    </tr>                    
 
                 </tbody>
-            </table>
+            </table><br>
+        </div>          
+
+            <hr>
             
+             <div>
+                <label for="name" > Name </label>
+                <input id = "name" type = "text" placeholder = "Enter your name" required>
+            </div>
+
+            <div>
+                <label for = "phone"> Phone </label>
+                <input id = "phone" type = "phone" placeholder = "Enter your phone" required>
+            </div>
+
+            <div>
+                <label for = "email"> Email </label>
+                <input id = "email" type = "email" placeholder = "Enter your email" required>
+            </div>  
+
+            <div>
+                <label for = "password"> Password </label>
+                <input id ="password" type = "password" placeholder ="Enter password" required>
+            </div>
+
+            <div>
+                <label for = "dob" > Date of birth </label>
+                <input id = "dob" type = "date" placeholder = "Enter DOB" required>
+            </div> 
+            
+          
+           <div>
+                <label for = "gender"> Gender </label>
+                <select id = "gender" required>
+                     <option value = "" disabled selected > hgf </option> -->
+                     <option value = "male"> Male </option> -->
+                     <option value = "Female"> Female </option> -->
+                     <option value = "other"> Other </option> -->
+                </select>
+                
+           </div>
+           
+           <h1> Radio button </h1>
+                 
+           <fieldset>
+               <legend> Subscription plane </legend>
+               <input id = "basic" type = "radio" name = "subscription"
+               value = "basic" required>     
+               <label for = "basic" > Basic </label>
+
+               <input id = "premium" type = "radio" name = "subscription"
+               value = "premium" required>
+               <label for = "premium"> Premium </label> 
+
+               <input id = "vip" type = "radio" name = "subscription"
+                value = "vip" required>
+               <label for = "vip"> VIP </label> 
+           </fieldset>
+
+           <div>
+               <input id = "check" type = "checkbox" value = "check" required>
+               <label for = "check"> I agreed terms and conditions </label>
+           </div>
+
+           <div>
+               <label for = "comment"> Comments </label>
+               <textarea id = "comments" placeholder = "Enter comments" rows = "4" required></textarea>
+           </div>
+
+           <div>
+               <button type ="submit"> Submit </button>
+           </div>
 
 
 
@@ -70,12 +141,7 @@
 
 
 
-
-
-
-
-
-
-        </div>
+      </form>
+        
     </body>
 </html>
