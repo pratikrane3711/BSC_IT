@@ -36,14 +36,89 @@
             console.log("a is now =", assignment )
 
             comp1 = 4;
-            comp2 = 5;
+            comp2 = 5; 
             
             console.log("comp1 == comp2 is", comp1 == comp2 )
             console.log("comp1 != comp2 is", comp1 != comp2 )
             console.log("comp1 === comp2", comp1 === comp2 )
             console.log("comp1 !== comp2", comp1 !== comp2 )
 
+            let n = prompt("whats your age?")
+            n = Number.parseInt(n)
+            
+            if( n < 0 ){
+              alert("this is invalid age")
+                 } 
 
+            else if( n < 9 ){
+               alert("You are to small you dont even think of driving")
+                     }
+
+            else if( 18 > n && n >= 9 ){
+               alert("You are under 18, you think drive after 18")
+                   }
+
+            else{
+                 alert("This is valid age")
+                }
+            
+
+
+            //for(let i = 0; i < 5; i++ )
+            //console.log(i)
+
+            let sum = 0;
+            let m = prompt("Enter the value of m")
+            m = Number.parseInt(m)
+            for(let i = 0; i < m; i++ ){
+               sum += (i + 1)
+             }
+            console.log("Sum of first " + n + " natural number is", sum)
+
+            let obj = {
+               Harry : 45,
+               Arjun : 67,
+               Sid : 87,
+               Kevada : 99
+                }
+     
+            for( let a in obj){
+               console.log(a)
+              }
+
+            for(let a in obj){
+              console.log("Marks of " + a + " is", obj[a])
+              }
+
+       
+            for(let b of "Harry"){
+                  console.log(b)
+              }
+       
+
+             let j = 0;
+            while( j < 5){
+              console.log(j)
+               j++
+             }
+               
+
+            let k = prompt("Enter the value of k")
+            k = Number.parseInt(k)
+            let v = 0;
+            while( v < k ){
+              console.log(v)
+                v++
+               }
+
+            let u = prompt("Enter the value of u")
+            u = Number.parseInt(u)
+            let y = 0;
+            do{
+               console.log(y)
+                 y++;
+              }
+            while(y < u )                 
 
 
 
