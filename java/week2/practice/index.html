@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+    <head>
+        <title> Functions </title>
+    </head>
+    <body>
+        <script>
+
+
+            function sayHellow(){
+                console.log("Hello World!");
+            }
+            sayHellow();
+
+
+
+
+            function greet(name){ 
+              console.log("Hellow " + name + "!");
+            }
+            greet("Rajesh");
+            greet("Mukesh");
+
+
+
+         
+            function add(a, b){
+                return a + b;
+            }
+            let result = add(5, 4);
+            console.log(result)
+
+
+
+
+            function multiply(a, b ) {
+               console.log(a * b);
+            }
+            multiply(4, 3);
+
+
+
+
+            let square = function(num) {
+              return num * num 
+            };
+            console.log(square(5));
+
+
+
+
+           let subtract = (a ,b) => a - b;
+           console.log(subtract(10, 4));
+
+
+
+
+
+          function get(name = "guest") {
+             console.log("Hellow, " + name);
+          }
+          get();
+          get("Mukesh");
+
+
+
+
+
+
+          function onePlusAvg (x, y) {
+            console.log("Done");
+            return 1 + (x, y)/2;
+          }
+           
+          let a = 1;
+          let b = 2;
+          let c = 3;
+           
+          console.log( "One Plus Average of a and b is ", onePlusAvg(a, b))
+          console.log( "One Plus Average of b and c is ", onePlusAvg(b, c))
+          console.log( "One Plus Average of a and c is ", onePlusAvg(a, c))
+          console.log(5, 4)
+
+
+        </script>
+    </body>
+</html>
