@@ -9,7 +9,7 @@ const books = [
 const bookList = document.getElementById("bookList");
 
 function displayBooks(bookArray) {
-  bookList.innerHTML = "";
+  bookList.innerHTML = ""; 
   bookArray.forEach(book => {
     bookList.innerHTML += `
       <div class="book-card">
@@ -37,3 +37,4 @@ function addToCart(bookTitle) {
 }
 
 displayBooks(books);
+                                                                                                               

@@ -1,0 +1,56 @@
+<!DOCTYPE html><html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Fresh Veggie Store</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <h1>🥕 Fresh Vegetable Store</h1>
+    <nav>
+      <a href="#">Home</a>
+      <a href="#products">Products</a>
+      <a href="#cart">Cart (<span id="cart-count">0</span>)</a>
+    </nav>
+  </header>  <section class="hero">
+    <h2>Fresh & Organic Vegetables Delivered</h2>
+    <p>Healthy food, healthy life.</p>
+  </section>  <section id="products" class="product-section">
+    <h2>Our Vegetables</h2>
+    <div class="product-grid">
+      <div class="product-card">
+        <img src="https://images.unsplash.com/photo-1582515073490-dc84c53e2f2b" alt="Tomato">
+        <h3>Tomato</h3>
+        <p>₹40 / kg</p>
+        <button onclick="addToCart('Tomato', 40)">Add to Cart</button>
+      </div><div class="product-card">
+    <img src="https://images.unsplash.com/photo-1582515073490-dc84c53e2f2b" alt="Potato">
+    <h3>Potato</h3>
+    <p>₹30 / kg</p>
+    <button onclick="addToCart('Potato', 30)">Add to Cart</button>
+  </div>
+
+  <div class="product-card">
+    <img src="https://images.unsplash.com/photo-1567306226416-28f0efdc88ce" alt="Carrot">
+    <h3>Carrot</h3>
+    <p>₹50 / kg</p>
+    <button onclick="addToCart('Carrot', 50)">Add to Cart</button>
+  </div>
+
+  <div class="product-card">
+    <img src="https://images.unsplash.com/photo-1592928302636-9c1b59b9c3be" alt="Cabbage">
+    <h3>Cabbage</h3>
+    <p>₹35 / piece</p>
+    <button onclick="addToCart('Cabbage', 35)">Add to Cart</button>
+  </div>
+</div>
+
+  </section>  <section id="cart" class="cart-section">
+    <h2>Your Cart</h2>
+    <ul id="cart-items"></ul>
+    <h3>Total: ₹<span id="total-price">0</span></h3>
+    <button onclick="clearCart()">Clear Cart</button>
+  </section>  <footer>
+    <p>© 2026 Fresh Veggie Store | Made by Pratik</p>
+  </footer>  <script src="script.js"></script></body>
+</html>
