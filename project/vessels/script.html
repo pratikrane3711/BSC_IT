@@ -1,0 +1,67 @@
+const products = [
+  {
+    id: 1,
+    name: "Steel Dinner Plate",
+    price: 199,
+    image: "https://via.placeholder.com/300x200?text=Steel+Plate"
+  },
+  {
+    id: 2,
+    name: "Non-stick Fry Pan",
+    price: 599,
+    image: "https://via.placeholder.com/300x200?text=Fry+Pan"
+  },
+  {
+    id: 3,
+    name: "Pressure Cooker",
+    price: 1299,
+    image: "https://via.placeholder.com/300x200?text=Cooker"
+  },
+  {
+    id: 4,
+    name: "Copper Water Bottle",
+    price: 499,
+    image: "https://via.placeholder.com/300x200?text=Copper+Bottle"
+  },
+  {
+    id: 5,
+    name: "Stainless Steel Kadai",
+    price: 749,
+    image: "https://via.placeholder.com/300x200?text=Kadai"
+  },
+  {
+    id: 6,
+    name: "Mixer Grinder Jar Set",
+    price: 999,
+    image: "https://via.placeholder.com/300x200?text=Jar+Set"
+  }
+];
+
+let cartCount = 0;
+
+const productContainer = document.getElementById("product-container");
+const cartCountDisplay = document.getElementById("cart-count");
+
+function displayProducts() {
+  products.forEach(product => {
+    const card = document.createElement("div");
+    card.className = "product-card";
+
+    card.innerHTML = `
+      <img src="${product.image}" alt="${product.name}">
+      <h3>${product.name}</h3>
+      <p>₹${product.price}</p>
+      <button onclick="addToCart()">Add to Cart</button>
+    `;
+
+    productContainer.appendChild(card);
+  });
+}
+
+function addToCart() {
+  cartCount++;
+  cartCountDisplay.textContent = cartCount;
+  alert("Item added to cart!");
+}
+
+displayProducts();
