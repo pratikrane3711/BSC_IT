@@ -12,12 +12,12 @@ const flights = [
   { airline: "SpiceJet", time: "06:45 PM", price: 3900 }
 ];
 
-let chosenFlight = null;
+let chosenFlight = null;b
 
 flightForm.addEventListener("submit", function (e) {
   e.preventDefault();
 
-  const from = document.getElementById("from").value;
+  const from = document.getElementById("from").value; 
   const to = document.getElementById("to").value;
   const date = document.getElementById("date").value;
   const passengers = document.getElementById("passengers").value;
@@ -54,7 +54,8 @@ bookingForm.addEventListener("submit", function (e) {
 
   const name = document.getElementById("name").value;
 
-  alert(`✅ Booking Confirmed!\n\nThank you ${name}, your flight has been successfully booked. ✈️`);
+  alert(`✅ Booking Confirmed!\n\nThank you ${name}, your flight has been successfully booked. ✈️`);                      
   bookingForm.reset();
   bookingSection.style.display = "none";
 });
+
