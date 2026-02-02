@@ -1,5 +1,5 @@
 const notebooks = [
-  {
+  {  
     name: "Classmate Single Line Notebook",
     pages: "200 Pages",
     price: "₹85",
