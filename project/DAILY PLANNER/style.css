@@ -16,7 +16,7 @@ body {
   box-shadow: 0 10px 25px rgba(0,0,0,0.2);
   text-align: center;
 }
-
+             
 .app h1 {
   margin-bottom: 15px;                
 }
@@ -80,7 +80,7 @@ li button {
   color: white;
   padding: 4px 8px;
   border-radius: 4px;
-  cursor: pointer;
+  cursor: pointer; /                                    
 }
 
 .clear-btn {
@@ -96,11 +96,4 @@ li button {
 .clear-btn:hover {
   background: #e04343;
 }
-           
-
-
-
-
-*{
-    background:black
-}
+                                                                                                                                     
