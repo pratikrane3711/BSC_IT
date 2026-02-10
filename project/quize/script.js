@@ -28,9 +28,9 @@
   }
 ];
 
-let currentQuestionIndex = 0;
+let currentQuestionIndex = 0;      
 let score = 0;
-
+                                                                                                     
 const questionEl = document.getElementById("question");
 const answersEl = document.getElementById("answers");
 const nextBtn = document.getElementById("nextBtn");
@@ -48,7 +48,7 @@ function startQuiz() {
 }
 
 function showQuestion() {
-  resetState();
+  resetState(); 
   const currentQuestion = questions[currentQuestionIndex];
   questionEl.innerText = currentQuestion.question;
 

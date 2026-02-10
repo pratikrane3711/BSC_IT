@@ -1,0 +1,103 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: linear-gradient(to right, #8360c3, #2ebf91);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.app {
+  background: white;
+  width: 350px;
+  padding: 25px;
+  border-radius: 12px;
+  box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+}
+
+.app h1 {
+  text-align: center;
+}
+
+.balance-box {
+  text-align: center;
+}
+
+.income-expense {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+  background: #f4f4f4;
+  padding: 10px;
+  border-radius: 6px;
+}
+
+.money.plus {
+  color: green;
+}
+
+.money.minus {
+  color: red;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+form input {
+  padding: 10px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+}
+
+form button {
+  padding: 10px;
+  border: none;
+  border-radius: 6px;
+  background: #2ebf91;
+  color: white;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #26a37d;
+}
+
+.list {
+  list-style: none;
+  padding: 0;
+  margin-top: 15px;
+  max-height: 180px;
+  overflow-y: auto;
+}
+
+.list li {
+  background: #f4f4f4;
+  margin-bottom: 8px;
+  padding: 10px;
+  border-radius: 6px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-right: 5px solid;
+}
+
+.list li.plus {
+  border-color: green;
+}
+
+.list li.minus {
+  border-color: red;
+}
+
+.delete-btn {
+  background: red;
+  border: none;
+  color: white;
+  padding: 4px 8px;
+  border-radius: 4px;
+  cursor: pointer;
+}
