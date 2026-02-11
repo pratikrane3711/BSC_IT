@@ -70,4 +70,3 @@ function init() {
 
 form.addEventListener("submit", addTransaction);
 init();
-
