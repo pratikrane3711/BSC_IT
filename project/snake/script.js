@@ -6,7 +6,7 @@ const scoreText = document.getElementById("score");
 const box = 20;
 let snake = [{x: 200, y: 200}];
 let food = randomFood();
-
+     
 let dx = box;
 let dy = 0;
 
@@ -27,8 +27,8 @@ function changeDirection(e) {
     dx = 0;
     dy = -box;
   }
-  if(e.key === "ArrowDown" && dy === 0) {
-    dx = 0;
+  if(e.key === "ArrowDown" && dy === 0) { 
+    dx = 0;0
     dy = box;
   }
   if(e.key === "ArrowLeft" && dx === 0) {
@@ -56,7 +56,7 @@ function drawGame() {
   let head = {
     x: snake[0].x + dx,
     y: snake[0].y + dy
-  };
+  }; 
 
   if(head.x === food.x && head.y === food.y) {
     score++;
