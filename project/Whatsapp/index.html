@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>WhatsApp UI</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="app">
+
+  <!-- Sidebar -->
+  <div class="sidebar">
+    <h2>Chats</h2>
+    <div class="chat-item" onclick="openChat('Rahul')">
+      <p>Rahul</p>
+      <small>Hey bro!</small>
+    </div>
+
+    <div class="chat-item" onclick="openChat('Anita')">
+      <p>Anita</p>
+      <small>See you tomorrow</small>
+    </div>
+  </div>
+
+  <!-- Chat Area -->
+  <div class="chat-area">
+
+    <div class="chat-header" id="chatHeader">
+      Select a chat
+    </div>
+
+    <div class="messages" id="messages"></div>
+
+    <div class="input-area">
+      <input type="text" id="messageInput" placeholder="Type a message">
+      <button onclick="sendMessage()">Send</button>
+    </div>
+
+  </div>
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+</html>
