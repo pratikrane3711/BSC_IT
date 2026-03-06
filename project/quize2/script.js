@@ -50,7 +50,7 @@ div.onclick = ()=>{
 
 if(index === q.correct){
 score++;
-}
+}  
 
 };
 
@@ -62,23 +62,23 @@ startTimer();
 }
 
 function nextQuestion(){
-current++;
-loadQuestion();
+current++;            
+loadQuestion();.
 }
 
 function startTimer(){
 
 clearInterval(timer);
 
-time = 10;
-
-timer = setInterval(()=>{
+time = 10;          
+                 
+timer  = setInterval(()=>{                                              
 
 document.getElementById("timer").innerText =
 "Time: " + time;
 
 time--;
-
+        
 if(time < 0){
 clearInterval(timer);
 nextQuestion();
