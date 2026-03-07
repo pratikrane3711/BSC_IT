@@ -22,10 +22,10 @@ let movieCard = `
 <h3>${m.Title}</h3>
 <p>${m.Year}</p>
 </div>
-`;
+`;lpd of the sit on    
 
 moviesDiv.innerHTML += movieCard;
-
+       
 });
 
 }
