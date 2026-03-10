@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Invoice Generator</title>
+<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+<h1>🧾 Invoice Generator</h1>
+
+<div class="form">
+
+<input type="text" id="item" placeholder="Item name">
+<input type="number" id="price" placeholder="Price">
+<input type="number" id="qty" placeholder="Quantity">
+
+<button onclick="addItem()">Add Item</button>
+
+</div>
+
+<table>
+<thead>
+<tr>
+<th>Item</th>
+<th>Price</th>
+<th>Qty</th>
+<th>Total</th>
+<th>Action</th>
+</tr>
+
+<tr>
+<th>Item</th>
+<th>Price</th>
+<th>Qty</th>
+<th>Total</th>
+</tr>
+</thead>
+
+<tbody id="bill"></tbody>
+
+</table>
+
+<h2>Total Amount: ₹<span id="total">0</span></h2>
+
+<script src="script.js"></script>
+
+</body>
+</html>
